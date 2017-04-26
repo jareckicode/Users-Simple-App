@@ -1,0 +1,41 @@
+.list-users {
+    padding-left: 0;
+}
+
+.list-users li {
+    border: 1px solid #eee;
+    list-style-type: none;
+    padding: 10px 25px;
+}
+
+
+
+.img-list-users {
+    width: 60px;
+    height: 60px;
+    border: 2px solid #2ecc71;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-right: 10px;
+    float: left;
+    object-fit: cover;
+}
+
+
+.selected {
+      background-color: #2ecc71 !important;
+      color: white;
+    }
+
+.list-users li {
+      transition: all .3s ease;
+    }
+
+.list-users li p {
+      display: none;
+
+}
+
+.list-users li.selected p {
+      display: block;
+}

@@ -1,0 +1,22 @@
+
+<!-- <h1>
+  {{title}}
+</h1> -->
+
+<section>
+    <div class="row ">
+        <div class="col-1-4 sidebar">
+            <ul class="list-users">
+
+                <li *ngFor="let user of users" (click)="onSelect(user)" [class.selected]="user === selectedUser">
+                    <img src="{{user.img}}" class="img-list-users">
+                    <h4>{{user.name}}</h4>
+                    <p>{{user.position}}</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-3-4">
+            <user-detail [user]="selectedUser"></user-detail>
+        </div>
+    </div>
+</section>
